@@ -1,6 +1,10 @@
 ﻿@{
     ViewBag.Title = "FeedBack";
 }
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="~/Scripts/LikeABus/feedback.js"></script>
+
 <h2>@ViewBag.Title.</h2>
 <h3>@ViewBag.Message</h3>
 <form>
@@ -15,8 +19,8 @@
 
     <div class="row">
         Comments<br />
-        <textarea class="col-xs-8"></textarea>
+        <textarea id="textArea" class="col-xs-8"></textarea>
     </div>
-    <input id="submit" class="col-xs-2" type="submit" />
+    <input id="submit" class="col-xs-2" type="submit" onclick="myFunction()"/>
 </form>
     
