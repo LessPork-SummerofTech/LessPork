@@ -3,5 +3,20 @@
 }
 <h2>@ViewBag.Title.</h2>
 <h3>@ViewBag.Message</h3>
+<form>
+    <label>
+        <input type="radio" name="rating" checked/>
+        <img class="col-xs-4" src="../../Content/happy.png" />
+    </label>
+    <label>
+        <input type="radio" name="rating"/>
+        <img class="col-xs-4" src="../../Content/sad.png"/>
+    </label>
 
-<p>Use this area to provide additional information.</p>
+    <div class="row">
+        Comments<br />
+        <textarea class="col-xs-8"></textarea>
+    </div>
+    <input class="col-xs-2" type="submit" />
+</form>
+    
