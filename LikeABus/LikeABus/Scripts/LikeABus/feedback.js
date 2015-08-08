@@ -1,7 +1,12 @@
-﻿$(document).ready(submitForm());
+﻿$(document).ready(submitForm);
 
 function submitForm() {
     console.log("opened script file");
-    //var rating = document.getElementsByClassName('rating').value;
-    console.log(rating);
+    $("#submit").click(function() {
+        if ($('input[name=gender]:checked').length > 0) {
+            debugger;
+            console.log("is selected");
+        }
+    });
+    
 }

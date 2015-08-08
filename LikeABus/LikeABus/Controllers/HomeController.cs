@@ -13,7 +13,7 @@ namespace LikeABus.Controllers
             return View();
         }
 
-        public ActionResult About()
+        public ActionResult FeedBack()
         {
             ViewBag.Message = "Your application description page.";
 
