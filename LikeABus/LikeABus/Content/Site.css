@@ -22,3 +22,15 @@ select,
 textarea {
     max-width: 280px;
 }
+label > input{ /* HIDE RADIO */
+  display:none;
+}
+label > input + img{ /* IMAGE STYLES */
+  cursor:pointer;
+  border:2px solid transparent;
+}
+label > input:checked + img{ /* (CHECKED) IMAGE STYLES */
+  padding: 5px;
+  border:2px solid #4169e1;
+  border-radius: 50%;
+}
